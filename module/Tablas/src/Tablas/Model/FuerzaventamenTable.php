@@ -64,7 +64,6 @@ class FuerzaventamenTable extends AbstractTableGateway{
                 'nombres' => $row->nombres,
                 'fecha_nacim' => $row->fecha_nacim,
             ); 
-        //hddfghfdgh
             
             $entities[] = $map;  
 
