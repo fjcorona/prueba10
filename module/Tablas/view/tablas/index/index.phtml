@@ -1,0 +1,43 @@
+<?//php var_dump($this->items);?>
+
+<table border='1' align='center'>
+    <caption><b>fuerzaventamen</b></caption>
+    
+    <tr>
+        <th>&nbsp;</th>
+        <th>nomina</th>  
+        <th>division</th>
+        <th>ap_paterno</th>
+        <th>ap_materno</th>
+        <th>nombres</th>
+        <th>puesto</th>
+        <th>fecha_nacim</th>
+    </tr>
+    
+    <?php
+        $i=0;
+        
+        foreach ($this->items as $registro)
+        {
+    ?>
+
+    <tr align='center'>
+        
+        <td>
+            <?php echo ++$i ?>
+        </td>
+    
+        <?php foreach ($registro as $campo)
+              {
+        ?>
+            <td>
+                <?php echo $campo ?>
+            </td>
+        <?php 
+               } 
+    ?>
+    </tr>    
+    <?php 
+        } 
+    ?>
+</table>
